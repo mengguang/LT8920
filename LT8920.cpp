@@ -1,6 +1,10 @@
 #include <SPI.h>
 #include "LT8920.h"
 
+#ifndef _BV
+#  define _BV(bit) (1 << (bit))
+#endif
+
 #define REGISTER_READ       0b10000000  //bin
 #define REGISTER_WRITE      0b00000000  //bin
 #define REGISTER_MASK       0b01111111  //bin
