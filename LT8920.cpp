@@ -189,6 +189,7 @@ LT8920::DataRate LT8920::getDataRate()
     case DATARATE_62KBPS:
       return LT8920_62KBPS;
   }
+  return LT8920_UNDEFINED;
 }
 
 uint16_t LT8920::readRegister(uint8_t reg)

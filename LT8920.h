@@ -9,6 +9,8 @@
 #ifndef LT8920_H
 #define LT8920_H
 
+#include "Arduino.h"  // for Stream
+
 class LT8920
 {
 
@@ -20,7 +22,8 @@ class LT8920
       LT8920_1MBPS,     /** default transmit rate */
       LT8920_250KBPS,   /** 250 Kpbs, only on lt8910 */
       LT8920_125KBPS,   /** 125 Kbps, only on lt8910 */
-      LT8920_62KBPS     /** 62 Kbps, only on lt8910 */
+      LT8920_62KBPS,     /** 62 Kbps, only on lt8910 */
+      LT8920_UNDEFINED  /** Error */
     };
 
   private:
